@@ -5,7 +5,7 @@ var io = require('socket.io')(http);
 let origins = ['https://kallkampen.web.app'/*,'http://localhost:8080'*/]
 
 io.origins((origin, callback) => {
-  if (origins.include(origin)) {
+  if (origins.includes(origin)) {
     return callback('Origin not allowed', false);
   }
   callback(null, true);
