@@ -2,6 +2,8 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
+io.origins(['https://kallkampen.web.app'/*,'http://localhost:8080'*/]);
+
 let users = []
 let highscore = null
 
@@ -48,7 +50,7 @@ io.on('connection', function(socket){
 
     GetUser(socket).headers = headers;
     io.emit('players update', GetAllPlayers());
-    
+
   });
 
 });
