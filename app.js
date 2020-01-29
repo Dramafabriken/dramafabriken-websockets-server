@@ -2,11 +2,11 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
-//io.origins(['https://kallkampen.web.app:*'/*,'http://localhost:8080'*/]);
+let origins = ['https://kallkampen.web.app'/*,'http://localhost:8080'*/]
 
 io.origins((origin, callback) => {
-  if (origin !== 'https://kallkampen.web.app') {
-    return callback('origin not allowed', false);
+  if (origins.include(origin)) {
+    return callback('Origin not allowed', false);
   }
   callback(null, true);
 });
