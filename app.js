@@ -4,6 +4,13 @@ var io = require('socket.io')(http);
 
 //io.origins(['https://kallkampen.web.app:*'/*,'http://localhost:8080'*/]);
 
+io.origins((origin, callback) => {
+  if (origin !== 'https://kallkampen.web.app') {
+    return callback('origin not allowed', false);
+  }
+  callback(null, true);
+});
+
 let users = []
 let highscore = null
 
