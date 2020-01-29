@@ -2,7 +2,7 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
-io.origins(['https://kallkampen.web.app:*'/*,'http://localhost:8080'*/]);
+io.origins(['https://kallkampen.web.app:3000'/*,'http://localhost:8080'*/]);
 
 let users = []
 let highscore = null
