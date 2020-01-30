@@ -1,11 +1,10 @@
 var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
-
-let origins = ['https://kallkampen.web.app'/*,'http://localhost:8080'*/]
+var origins = require('./origins.json')
 
 io.origins((origin, callback) => {
-  if (!origins.includes(origin)) {
+  if (!origins.origins.includes(origin)) {
     return callback('Origin not allowed', false);
   }
   callback(null, true);
