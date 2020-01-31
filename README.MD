@@ -1,4 +1,4 @@
-# Dramafabriken
+# Dramafabriken, WebSockets server
 
 ## Project setup
 ```
