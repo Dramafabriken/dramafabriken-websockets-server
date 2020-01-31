@@ -1,6 +1,7 @@
 {
   "production": [
-    "https://kallkampen.web.app"
+    "https://kallkampen.web.app",
+    "https://dramafabriken-se.web.app"
   ],
   "development": [
     "http://localhost:8080"
