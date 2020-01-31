@@ -1,5 +1,8 @@
 {
-  "origins": [
+  "production": [
     "https://kallkampen.web.app"
+  ],
+  "development": [
+    "http://localhost:8080"
   ]
 }

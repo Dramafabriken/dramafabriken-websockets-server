@@ -4,7 +4,7 @@ var io = require('socket.io')(http);
 var origins = require('./origins.json')
 
 io.origins((origin, callback) => {
-  if (!origins.origins.includes(origin)) {
+  if (!origins[process.env.NODE_ENV].includes(origin)) {
     return callback('Origin not allowed', false);
   }
   callback(null, true);
