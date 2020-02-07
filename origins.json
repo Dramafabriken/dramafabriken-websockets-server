@@ -1,7 +1,7 @@
 {
   "production": [
-    "https://nyhetsmaskinen.se/",
-    "https://nyhetsmaskinen.web.app/"
+    "https://nyhetsmaskinen.se",
+    "https://nyhetsmaskinen.web.app"
   ],
   "development": [
     "http://localhost:8080"
