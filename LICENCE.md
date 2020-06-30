@@ -1,3 +1,10 @@
+# Authors
+
+Open source code: https://github.com/Nyhetsmaskinen
+Development: Interaktiva rum (https://interaktivarum.se/)
+Concept and design: Fabel kommunikation (http://www.fabel.se/), Interaktiva rum
+In collaboration with: Det demokratiska samtalet (https://demokratiskasamtalet.se/)
+
 # Nyhetsmaskinen licence
 
 This work is licensed under a Creative Commons Attribution 4.0 International License. https://creativecommons.org/licenses/by/4.0/
