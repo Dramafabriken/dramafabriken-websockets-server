@@ -1,6 +1,5 @@
 {
   "production": [
-    "https://nyhetsmaskinen.se",
     "https://nyhetsmaskinen.web.app"
   ],
   "development": [
